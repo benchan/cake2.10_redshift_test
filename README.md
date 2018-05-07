@@ -19,7 +19,7 @@ yum --enablerepo=remi-php56 install php-pdo php-pgsql
 
 
 ### DB設定サンプル
-```
+```php
 class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Postgres',
