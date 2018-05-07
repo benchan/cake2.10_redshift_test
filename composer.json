@@ -1,0 +1,25 @@
+{
+    "name": "test",
+    "repositories": [
+        {
+            "type": "pear",
+            "url": "http://pear.cakephp.org"
+        }
+    ],
+    "require": {
+        "cakephp/cakephp": ">=2.6.4,<3.0.0"
+    },
+    "require-dev": {
+        "cakephp/debug_kit" : ">=2.2.4,<3.0.0"
+    },
+    "config": {
+        "vendor-dir": "vendors/"
+    },
+    "extra": {
+        "installer-paths": {
+            "./plugins/{$name}/": [
+                "cakephp/debug_kit"
+            ]
+        }
+    }
+}
