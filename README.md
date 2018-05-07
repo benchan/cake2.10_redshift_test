@@ -16,3 +16,22 @@ DocumentRoot "/var/www/html/vendors/cakephp/cakephp"
 #pgsql
 yum --enablerepo=remi-php56 install php-pdo php-pgsql
 ```
+
+
+### DB設定サンプル
+```
+class DATABASE_CONFIG {
+	public $default = array(
+		'datasource' => 'Database/Postgres',
+		'persistent' => false,
+		'host' => 'v3sample.*********.[region].redshift.amazonaws.com',
+		'login' => 'horie',
+		'password' => '***********',
+		'database' => 'v3sample',
+		'prefix' => '',
+    'port' => 5439,
+    'schema' => 'public',
+		//'encoding' => 'utf8',
+	);
+}
+```
